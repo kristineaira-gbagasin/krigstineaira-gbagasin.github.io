@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Kristine Aira G. Bagasin</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="HeaderPart">
+        <h1 id="InnerHeaderText">MY PERSONAL PORTFOLIO</h1>
+        <p>Kristine Aira Gambol Bagasin | BS Information Technology</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#personal">Personal Info</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#inbox">Inbox (<span class="unread-badge">0</span>)</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-toggle">🌙 Dark</button>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- SECTION 1: HOME / PROFILE -->
+        <section id="home">
+            <div class="profile-card">
+                <div class="profile-img-box">
+                    <img src="IMG_20261014_072533.jpg" 
+                         alt="Kristine Aira Gambol Bagasin" 
+                         class="profile-img"
+                         onerror="this.onerror=null; this.src='https://placehold.co/300x300/800020/ffffff?text=Kristine+Aira';">
+                </div>
+                <div class="profile-details">
+                    <h2>Kristine Aira Gambol Bagasin</h2>
+                    <div class="subtitle">BS Information Technology - 2nd Year (Web & Mobile Development Track)</div>
+                    <p class="profile-bio">
+                        Welcome to my personal student portfolio website! I am passionate about crafting functional web solutions, digital design, and programming.
+                    </p>
+                    <div class="info-list">
+                        <p><i class="fas fa-map-marker-alt"></i> <span>Cavite Homestead, Bambang, Nueva Vizcaya</span></p>
+                        <p>
+                            <i class="fas fa-envelope"></i> 
+                            <span>bagasinairagambol@gmail.com</span>
+                            <button class="btn-copy" onclick="copyText('bagasinairagambol@gmail.com')">Copy</button>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i> 
+                            <span>(+63) 926 258 0010</span>
+                            <button class="btn-copy" onclick="copyText('09262580010')">Copy</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: PERSONAL & FAMILY BACKGROUND -->
+        <section id="personal">
+            <h2 class="section-title"><i class="fas fa-id-card"></i> Personal Background & Career Goals</h2>
+            <div class="card">
+                <table class="data-table">
+                    <tr>
+                        <td class="label">Career Goals</td>
+                        <td>To excel as a Web and Mobile Developer by building functional, user-friendly applications and continuously expanding technical skills in full-stack web technologies and software systems.</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Interests</td>
+                        <td>Coding & Web Development, Digital Character Design & Sketching, Custom Art & Graphic Commission Servicing, Game Design Observation & Visual Aesthetics, Digital Image & Character Editing, and Multiplayer Online Gaming.</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Age & Birthday</td>
+                        <td>19 years old (Born February 10, 2007)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Physical Stats</td>
+                        <td>Female | Height: 5'2" (157.48 cm) | Weight: 53 kgs. (116.845 lbs.)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Citizenship & Status</td>
+                        <td>Filipino | Single | Roman Catholic</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3 class="section-subheading"><i class="fas fa-users"></i> Family Details</h3>
+            <div class="card">
+                <table class="data-table">
+                    <tr>
+                        <td class="label">Father's Name</td>
+                        <td>Carlos A. Bagasin (Tricycle Driver)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Mother's Name</td>
+                        <td>Novella G. Bagasin (Store Owner)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Younger Sibling</td>
+                        <td>Carlos Miguel G. Bagasin (Grade 11 ICT Student)</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SKILLS -->
+        <section id="skills">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Skills & Capabilities</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>Technical & Programming</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Basic JavaScript</li>
+                        <li>Computer & Code Troubleshooting / Debugging</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h4>Tools & Technologies</h4>
+                    <ul>
+                        <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                        <li>Google Workspace (Docs, Sheets, Slides, Drive)</li>
+                        <li>VS Code & Git Version Control</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h4>Soft Skills & Management</h4>
+                    <ul>
+                        <li>Analytical Thinking & Problem-Solving</li>
+                        <li>Careful Data Entry & Records Management</li>
+                        <li>File Organization & System Maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: EDUCATION -->
+        <section id="education">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Educational Background</h2>
+            
+            <div class="card card-edu">
+                <span class="badge-year badge-current">2025 - Present</span>
+                <h3 class="section-subheading">College</h3>
+                <p><strong>Bachelor of Science in Information Technology</strong></p>
+                <p>Web & Mobile Development Track</p>
+                <p class="location-text"><i class="fas fa-map-marker-alt"></i> Heroes Boulevard, Calaocan, Bambang, Nueva Vizcaya</p>
+            </div>
+
+            <div class="card card-edu">
+                <span class="badge-year badge-past">2023 - 2025</span>
+                <h3 class="section-subheading">Senior High School</h3>
+                <p><strong>Technical, Vocational and Livelihood – Information, Communications and Technology (TVL-ICT)</strong></p>
+                <p>King’s College of the Philippines – Bambang, Inc.</p>
+                <p class="location-text"><i class="fas fa-map-marker-alt"></i> Magsaysay Hill, Bambang, Nueva Vizcaya</p>
+            </div>
+
+            <div class="card card-edu">
+                <span class="badge-year badge-past">2019 - 2023</span>
+                <h3 class="section-subheading">Junior High School</h3>
+                <p>Saint Catherine’s School</p>
+                <p class="location-text"><i class="fas fa-map-marker-alt"></i> Buag, Bambang, Nueva Vizcaya</p>
+            </div>
+
+            <div class="card card-edu">
+                <span class="badge-year badge-past">2013 - 2019</span>
+                <h3 class="section-subheading">Elementary</h3>
+                <p>Bambang North Central School</p>
+                <p class="location-text"><i class="fas fa-map-marker-alt"></i> Caloocan, Bambang, Nueva Vizcaya</p>
+            </div>
+        </section>
+
+        <!-- SECTION 5: PROJECTS (6 CONTAINERS) -->
+        <section id="projects">
+            <h2 class="section-title"><i class="fas fa-code"></i> Projects</h2>
+            <p class="section-desc">Projects are made but not uploaded yet.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div>
+                        <h4>Top 10 Most Popular Sports (home.html)</h4>
+                        <p>A web page showcasing the top ten most watched sports on Earth, featuring image links and structured information.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> HTML5, CSS</p>
+                        <p><strong>Role:</strong> Made as a group of pairs</p>
+                    </div>
+                    <div class="project-status">Status: Made (Not Uploaded Yet)</div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h4>Math Match Game (MathMatch.html)</h4>
+                        <p>An interactive matching memory game with math equations, letter categories, scoring, and high-score tracking.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                        <p><strong>Role:</strong> Made as a group of pairs</p>
+                    </div>
+                    <div class="project-status">Status: Made (Not Uploaded Yet)</div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h4>Aira's Sari-sari Store System (StoreStorageSystem.html)</h4>
+                        <p>An inventory management and POS system featuring product tables, real-time search dropdowns, calculation of totals, and change computation.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                        <p><strong>Role:</strong> Self Developer & Designer</p>
+                    </div>
+                    <div class="project-status">Status: Made (Not Uploaded Yet)</div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h4>Melody Box Login Page (LogInPage.html)</h4>
+                        <p>A dark-themed music login interface featuring rose-gold visual elements, ambient glow, and responsive design.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> HTML5, CSS3, FontAwesome</p>
+                        <p><strong>Role:</strong> Self Developer & Designer</p>
+                    </div>
+                    <div class="project-status">Status: Made (Not Uploaded Yet)</div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h4>Classic Personal Portfolio Layout (MyPersonalPortfolio.html)</h4>
+                        <p>A classic personal portfolio layout featuring personal information tables, quote blocks, and structured profile sections.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> HTML5, CSS3</p>
+                        <p><strong>Role:</strong> Self Developer & Designer</p>
+                    </div>
+                    <div class="project-status">Status: Made (Not Uploaded Yet)</div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h4>Interactive Personal Portfolio (PersonalPortfolio.html)</h4>
+                        <p>A personal web portfolio featuring structured tables, copy buttons, a secure local inbox, and section navigation.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> HTML5, CSS3, FontAwesome, JavaScript</p>
+                        <p><strong>Role:</strong> Self Developer & Designer</p>
+                    </div>
+                    <div class="project-status">Status: Made (Not Uploaded Yet)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: CONTACT FORM -->
+        <section id="contact">
+            <h2 class="section-title"><i class="fas fa-paper-plane"></i> Send Me a Message</h2>
+            <div class="card">
+                <p class="section-desc">
+                    Have a question or want to get in touch with Kristine? Fill out the form below to send a direct message.
+                </p>
+
+                <form id="portfolioContactForm" onsubmit="handleFormSubmit(event)">
+                    <div class="contact-form-group">
+                        <label for="senderName">Your Name *</label>
+                        <input type="text" id="senderName" placeholder="e.g. Juan Cruz" required>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="senderEmail">Your Email Address *</label>
+                        <input type="email" id="senderEmail" placeholder="e.g. juancruz@example.com" required>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="messageSubject">Subject</label>
+                        <input type="text" id="messageSubject" placeholder="e.g. Project Inquiry / Hello Kristine">
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="messageText">Message *</label>
+                        <textarea id="messageText" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECTION 7: PRIVATE OWNER INBOX -->
+        <section id="inbox">
+            <h2 class="section-title"><i class="fas fa-lock"></i> Private Owner Inbox</h2>
+            <p class="inbox-desc">
+                Messages sent via the contact form are stored confidentially. Only Kristine can unlock and read received messages.
+            </p>
+
+            <!-- Locked View -->
+            <div id="inboxLockedView" class="card card-locked">
+                <i class="fas fa-user-shield lock-icon"></i>
+                <h3 class="lock-title">Portfolio Owner Authentication</h3>
+                <p class="lock-desc">
+                    Enter your PIN or Passcode to unlock and read your messages. <br>
+                    <small class="lock-hint">(Default Password: <strong>kristine2007</strong>)</small>
+                </p>
+
+                <div class="lock-input-group">
+                    <input type="password" id="ownerPassInput" placeholder="Enter PIN / Password">
+                    <button onclick="unlockInbox()" class="btn-submit btn-unlock">
+                        <i class="fas fa-key"></i> Unlock
+                    </button>
+                </div>
+                <p id="authErrorMessage" class="auth-error-msg">
+                    Incorrect Password! Access denied.
+                </p>
+            </div>
+
+            <!-- Unlocked View -->
+            <div id="inboxUnlockedView" class="inbox-view-hidden card" style="padding: 0;">
+                <div class="inbox-header">
+                    <span><i class="fas fa-envelope-open-text"></i> Kristine's Inbox (<span class="unread-badge">0</span>)</span>
+                    <div class="inbox-actions">
+                        <button onclick="lockInbox()" class="btn-lock-inbox">
+                            <i class="fas fa-lock"></i> Lock
+                        </button>
+                        <button onclick="clearAllMessages()" class="btn-clear-inbox">
+                            Clear All
+                        </button>
+                    </div>
+                </div>
+
+                <div id="messagesContainer">
+                    <!-- Messages render here -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="BackgroundFooter">
+        <ul>
+            <li><strong>Kristine Aira G. Bagasin</strong></li>
+            <li>bagasinairagambol@gmail.com</li>
+            <li>0926 258 0010</li>
+            <li>Bambang, Nueva Vizcaya</li>
+        </ul>
+        <p class="copyright-text">
+            &copy; 2026 Kristine Aira Gambol Bagasin. All rights reserved.
+        </p>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑ Top</button>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
